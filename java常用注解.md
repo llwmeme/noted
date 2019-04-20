@@ -22,7 +22,7 @@
 #### @TableField
 >例如：@TableField(.. , update="%s+1") 其中 %s 会填充为字段
 >输出 SQL 为：update 表 set 字段=字段+1 where ...
->例如：@TableField(.. , update="now()") 使用数据库时间
+>例如：@TableField(.. , update="SYSDATE") 使用数据库时间
 >输出 SQL 为：update 表 set 字段=now() where ...
 
 
