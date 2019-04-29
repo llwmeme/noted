@@ -38,6 +38,26 @@ for i,v:=range arr3{
     s1 :=s[2,3];
 ```
 
+> go语言删除/ 增加
+```go
+// go语言插入
+arr :=[...]int{0,1,2,3,4,5,6,7,8,9}
+s := arr[0:6]
+// 向s后面添加一个元素
+fmt.Println(s)
+s = append(s,2);
+fmt.Println(s)
+// 移除第一个元素
+s = s[1:]
+fmt.Println(s)
+// 移除最后一个元素
+s = s[:len(s)-1]
+fmt.Println(s)
+// 移除一个中间元素  ...的意思是把切片里的值全都拿出来
+s = append(s[0:2],s[3:5]...)
+fmt.Println(s)
+```
+
 
 
 
